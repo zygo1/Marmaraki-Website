@@ -1,9 +1,10 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Help from './components/Help';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Activities from './components/Activities';
 import Homepage from './components/Homepage';
-import Meteora from './components/Meteora';
+import Monasteries from './components/Monasteries';
 
 function App() {
   return (
@@ -12,12 +13,11 @@ function App() {
         <Navigation />
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/Meteora' element={<Meteora />} />
-          <Route path='/Activities' />
+          <Route path='/Monasteries' element={<Monasteries />} />
+          <Route path='/Activities' element={<Activities />} />
           <Route path='/Restaurants' />
           <Route path='/Help' element={<Help />} />
         </Routes>
-
       </Router>
 
     </>

@@ -1,6 +1,6 @@
-import '.././styles/Meteora.css';
+import '.././styles/Monasteries.css';
 
-const Meteora = () => {
+const Monasteries = () => {
 
     const monasteriesObj = [{
         "name": "Monastery of Great Meteoron",
@@ -106,7 +106,7 @@ const Meteora = () => {
         <div className="monastery-container">
             {monasteriesObj.map((monastery, index) => (
                 <div className='monastery-row' key={index}>
-                    <article className={`monastery-frame ${index % 2 === 0 ? 'left-column' : 'right-column'}`}>
+                    <article className='monastery-frame'>
                         <h3>{monastery.name}</h3>
                         <p>{monastery.text1}</p>
                         <p>{monastery.text2}</p>
@@ -121,4 +121,4 @@ const Meteora = () => {
     );
 };
 
-export default Meteora;
+export default Monasteries;

@@ -1,6 +1,7 @@
    .monastery-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
   }
   
   .monastery-row {
@@ -20,15 +21,12 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+    margin-right: 20px;
+    margin-left: 20px
   }
   
   .monastery-frame:hover {
-    background-color: #eaeaea;
-  }
-  
-  .left-column, .right-column {
-    margin-right: 20px;
-    margin-left: 20px
+    background-color: #e4e4e4;
   }
   
   h3 {

@@ -1,0 +1,42 @@
+.activities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around       ;
+    align-items: center;
+    margin: 60px 10px 0px 10px;
+
+}
+
+.container{
+    background-color: rgb(228, 228, 228);
+    width: 360px;
+    height: 270px;
+    min-width: 230px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    font-family: Poppins;
+}
+
+.container img {
+    width: 360px;
+    height: 180px;
+    object-fit: cover;
+    min-width: 230px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+@media (max-width:768px){
+    .activities{
+        flex-direction: column;
+    }
+}
+
+

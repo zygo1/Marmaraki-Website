@@ -55,7 +55,7 @@ const Navigation = () => {
             <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
             <ul className={`navLinks ${isActive ? 'active' : ''}`} >
                 <li>
-                    <Link to='/meteora'>Meteora</Link>
+                    <Link to='/monasteries'>Monasteries</Link>
                 </li>
                 <li>
                     <Link to='/activities'>Activities</Link>
