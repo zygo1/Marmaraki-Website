@@ -35,13 +35,14 @@
     right: 220px;
     transform: translateX(200px);
     transition: transform 0.5s ease;
-  }
+    margin-left: 26px;
+}
   
   .navLinks.active {
     transform: translateX(0px);
   }
 
-@media  (max-width:768px){
+@media  (max-width:850px){
     /* Responsive bar */
     .navLinks {
     display: flex;
