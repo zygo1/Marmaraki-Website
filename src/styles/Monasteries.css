@@ -1,64 +1,59 @@
-   .monastery-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  
-  .monastery-row {
-    display: flex;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .monastery-frame {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    margin-right: 20px;
-    margin-left: 20px
-  }
-  
-  .monastery-frame:hover {
-    background-color: #e4e4e4;
-  }
-  
-  h3 {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  p {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #666;
-  }
-
-  .monastery-iframe-maps{
-    width: 500px;
-    height: 500px;
+.monasteries-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 120px;
+  justify-content: space-around;
+  margin: 60px 10px 0px 10px;
 }
-  
-  @media (max-width: 768px) {
-    .monastery-row {
-      flex-direction: column;
-    }
-  
-    .left-column,
-    .right-column {
-      margin: 0;
-    }
 
-    .monastery-iframe-maps{
-        width: 340px;
-        height: 400px;
-    }
+.container.monasteries {
+  transition: height 0.3s ease; 
+  position: relative;
+}
+
+.container.monasteries.expanded {
+  height: 600px; 
+}
+
+.container button{
+ border: none;
+ border-radius: 4px;
+ /* background-color: white;
+ color: #ff385d; */
+ background-color: #ff385d;
+ color: white;
+ font-weight: 600;
+ padding: 6px;
+ cursor: pointer;
+ margin-top: 10px;
+}
+
+.button-location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 4px 0px 0px;
+}
+
+
+.container.monasteries.expanded:hover, .container.monasteries:hover{
+  background-color: rgb(202, 202, 202);
+  transition: 0.3s ease;
+}
+.information{
+  margin: 10px 8px 0px 8px;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+}
+
+
+@media (max-width:768px){
+  .monasteries-wrapper{
+    gap: 20px;
   }
-  
+}
+
+
+
+

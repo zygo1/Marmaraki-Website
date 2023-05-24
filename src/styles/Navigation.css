@@ -57,6 +57,7 @@
     background-color: #FF385C;
     color: white;
     text-align: center;
+    z-index:2;
     }
     
     .navLinks.active {

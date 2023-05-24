@@ -46,6 +46,13 @@ const Help = () => {
                                 Visiting Meteora by car provides a convenient and flexible way to explore the awe-inspiring region. With the freedom to navigate at your own pace, you can easily access the various
                                 viewpoints and monasteries scattered across the landscape. Along the way, you can stop at designated parking areas and embark on short walks to fully appreciate the natural beauty that surrounds you.
                             </div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    tips_and_updates
+                                </span>
+                                Tip for visiting Meteora:
+                                When planning your visit to the monasteries, keep in mind that wearing long skirts or long dresses for women and long pants for men is required as a sign of respect for the religious and cultural traditions of the region.
+                            </div>
                         </div>
                     )}
                     <li onClick={() => handleListClick(1)} className='outter-list'><span>Which is the nearest Monastery to the village?</span><span className="material-symbols-outlined add">add</span></li>
