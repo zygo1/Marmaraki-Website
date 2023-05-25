@@ -6,7 +6,7 @@ const ScrollToTop = () => {
     const [visible, setVisible] = useState(false);
 
     const handleScroll = () => {
-        if (window.pageYOffset > 300) {
+        if (window.pageYOffset > 100) {
             setVisible(true);
         } else {
             setVisible(false);
@@ -28,8 +28,12 @@ const ScrollToTop = () => {
 
     return (
         <>
-            {visible ? <button className="scroll-to-top" onClick={handleScrollToTop}><span className="material-symbols-outlined">keyboard_arrow_up</span>
-            </button> : null}
+            {visible ?
+                <>
+                    <button className="scroll-to-top" onClick={handleScrollToTop}></button>
+                    <span className="material-symbols-outlined arrow" onClick={handleScrollToTop}>keyboard_arrow_up</span>
+                </>
+                : null}
         </>
     )
 

@@ -7,19 +7,32 @@
 }
 
 .container.monasteries {
-  transition: height 0.3s ease; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;   
+  width: 360px;
+  height: 285px;
+  min-width: 230px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Poppins;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 5px 10px 15px rgb(143, 143, 143);
   position: relative;
+  
+  transition: height 0.3s ease;
 }
 
 .container.monasteries.expanded {
-  height: auto;
+  height: 760px;
+  overflow-y: auto;
 }
 
 .container .info-button{
  border: none;
  border-radius: 4px;
- /* background-color: white;
- color: #ff385d; */
  background-color: #ff385d;
  color: white;
  font-weight: 600;
@@ -36,11 +49,11 @@
   margin: 10px 4px 0px 0px;
 }
 
-
 .container.monasteries.expanded:hover, .container.monasteries:hover{
   background-color: var(--hoverColor);
   transition: 0.3s ease;
 }
+
 .information{
   margin: 10px 8px 10px 8px;
   font-family: "Open Sans";
@@ -57,7 +70,3 @@
     gap: 20px;
   }
 }
-
-
-
-

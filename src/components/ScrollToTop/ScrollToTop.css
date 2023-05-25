@@ -15,3 +15,11 @@
     background-color:var(--primaryHover);
     transition: 0.3s ease;
 }
+
+.material-symbols-outlined.arrow{
+    position: fixed;
+    cursor: pointer;
+    left: 22px;
+    bottom: 22px;
+    color: white;
+}

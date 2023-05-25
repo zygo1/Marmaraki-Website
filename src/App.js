@@ -5,6 +5,7 @@ import Help from './components/Help/Help';
 import Activities from './components/Activities/Activities';
 import Homepage from './components/Homepage/Homepage';
 import Monasteries from './components/Monasteries/Monasteries';
+import Restaurants from './components/Restaurants/Restaurants';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path='/' element={<Homepage />} />
           <Route path='/Monasteries' element={<Monasteries />} />
           <Route path='/Activities' element={<Activities />} />
-          <Route path='/Restaurants' />
+          <Route path='/Restaurants' element={<Restaurants />} />
           <Route path='/Help' element={<Help />} />
         </Routes>
       </Router>
