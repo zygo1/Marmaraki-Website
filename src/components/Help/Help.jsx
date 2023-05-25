@@ -49,7 +49,7 @@ const Help = () => {
                                     viewpoints and monasteries scattered across the landscape. Along the way, you can stop at designated parking areas and embark on short walks to fully appreciate the natural beauty that surrounds you.
                                 </div>
                                 <div>
-                                    <span class="material-symbols-outlined">
+                                    <span classname="material-symbols-outlined">
                                         tips_and_updates
                                     </span>
                                     Tip for visiting Meteora:

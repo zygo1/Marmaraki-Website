@@ -28,7 +28,7 @@ const ScrollToTop = () => {
 
     return (
         <>
-            {visible ? <button className="scroll-to-top" onClick={handleScrollToTop}><span class="material-symbols-outlined">keyboard_arrow_up</span>
+            {visible ? <button className="scroll-to-top" onClick={handleScrollToTop}><span className="material-symbols-outlined">keyboard_arrow_up</span>
             </button> : null}
         </>
     )

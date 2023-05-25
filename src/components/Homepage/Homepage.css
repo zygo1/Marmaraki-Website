@@ -1,4 +1,3 @@
-
 .landing{
     display: flex;
     flex-flow: row nowrap;
@@ -12,7 +11,8 @@
     width: 50%;
     background-color: #ff5b79;
     color: white;
-    height: 600px;
+    height: auto;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,16 +20,16 @@
 
 .about div{
     width: 70%;
-    font-size: 1rem;
+    font-size: min(1rem, 16px);
     font-family: 'Sriracha', cursive;
     font-weight: 200;
 }
 
-
 .landing img{
     width: 50%;
-    height: 600px;
     max-width: 100%;
+    height: auto;
+    min-height: 600px;
 }
 
 @media (max-width:850px){
@@ -38,9 +38,13 @@
     }
     .landing .about{
         width: 100%;
+        height: auto;
+        min-height: 600px;
     }
 
     .landing img{
         width: 100%;
+        height: auto;
+        min-height: 600px;
     }
 }

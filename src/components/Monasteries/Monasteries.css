@@ -12,7 +12,7 @@
 }
 
 .container.monasteries.expanded {
-  height: 710px; 
+  height: auto;
 }
 
 .container .info-button{
@@ -42,7 +42,7 @@
   transition: 0.3s ease;
 }
 .information{
-  margin: 10px 8px 0px 8px;
+  margin: 10px 8px 10px 8px;
   font-family: "Open Sans";
   font-size: 0.9rem;
 }

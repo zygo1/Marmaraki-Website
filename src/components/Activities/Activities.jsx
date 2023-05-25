@@ -29,9 +29,9 @@ const Activities = () => {
     return (
         <>
             <section className="activities">
-                {activitiesArray.map((activity) => {
+                {activitiesArray.map((activity, index) => {
                     return (
-                        <div className="container">
+                        <div className="container" key={index}>
                             <a href={activity.link} target="_blank" rel="noreferrer">
                                 <div className="image"><img src={activity.image} alt={activity.name} /></div>
                             </a>
