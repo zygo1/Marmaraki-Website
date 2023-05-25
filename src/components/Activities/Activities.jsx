@@ -28,7 +28,6 @@ const Activities = () => {
 
     return (
         <>
-
             <section className="activities">
                 {activitiesArray.map((activity) => {
                     return (

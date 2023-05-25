@@ -12,7 +12,7 @@
 }
 
 .container.monasteries.expanded {
-  height: 600px; 
+  height: 710px; 
 }
 
 .container .info-button{
@@ -47,6 +47,10 @@
   font-size: 0.9rem;
 }
 
+.hours{
+  margin: 15px 0px 10px 0px;
+  font-weight: 600;
+}
 
 @media (max-width:850px){
   .monasteries-wrapper{
