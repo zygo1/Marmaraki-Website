@@ -1,0 +1,17 @@
+.scroll-to-top{
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    padding: 14px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+
+.scroll-to-top:hover{
+    background-color:var(--primaryHover);
+    transition: 0.3s ease;
+}

@@ -1,11 +1,8 @@
-import '.././styles/Navigation.css';
-import meteora from '.././assets/meteora.png';
-import meteora_black from '.././assets/meteora-black.png';
+import './Navigation.css';
+import meteora_black from '../../assets/meteora-black.png';
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-
-
 
 const Navigation = () => {
     // Handle responsive navigation side bar
@@ -22,17 +19,23 @@ const Navigation = () => {
         setIsActive(!isActive);
     };
 
+    const handleScroll = () => {
+        setIsActive(false);
+    };
+
     useEffect(() => {
         window.addEventListener('click', handleNavBarClick);
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('click', handleNavBarClick);
+            window.removeEventListener('scroll', handleScroll);
         }
     }, []);
 
     // Reset the navbar to its initial position every time that media queries occurs
     useEffect(() => {
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        const mediaQuery = window.matchMedia('(max-width: 850px)');
 
         const handleMediaQueryChange = () => {
             setIsActive(false);
@@ -46,8 +49,49 @@ const Navigation = () => {
 
     }, [])
 
+    // Hide navbar while scrolling down and show it again when scrolling up
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        // init the prevScrollPos
+        let prevScrollPos = window.scrollY;
+
+        const handleScroll = () => {
+            // init the currentScrollPos 
+            const currentScrollPos = window.scrollY;
+            const header = navRef.current; // hook the header
+
+            if (!header) {
+                return;
+            };
+
+            // Check if media query is applied
+            const mediaQuery = window.matchMedia('(max-width: 850px)');
+
+            if (mediaQuery.matches) {
+                return; // skip the transformations if media query is applied
+            };
+
+            // check if the user scrolls down or up
+            if (prevScrollPos > currentScrollPos) {
+                header.style.transform = "translateY(0px)";
+            } else if (prevScrollPos <= currentScrollPos) {
+                header.style.transform = "translateY(-200px)";
+            };
+
+            // update the prevScrollPos
+            prevScrollPos = currentScrollPos;
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
+
     return (
-        <nav className='navigationBar' >
+        <nav className='navigationBar' ref={navRef} >
             <div className='image-brandname'>
                 <img src={meteora_black} alt='Meteora' />
                 <Link to='/'>Marmaraki</Link>

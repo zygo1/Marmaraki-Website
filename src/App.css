@@ -2,3 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+
+:root{
+  --primaryColor:#ff5b79;
+  --secondaryColor: #ffffff;
+  --hoverColor:#cacaca;
+  --primaryHover:#ff365a;
+}

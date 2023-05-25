@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import Help from './components/Help';
-import Activities from './components/Activities';
-import Homepage from './components/Homepage';
-import Monasteries from './components/Monasteries';
+import Navigation from './components/Navigation/Navigation';
+import Help from './components/Help/Help';
+import Activities from './components/Activities/Activities';
+import Homepage from './components/Homepage/Homepage';
+import Monasteries from './components/Monasteries/Monasteries';
 
 function App() {
   return (

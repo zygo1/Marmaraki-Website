@@ -1,7 +1,8 @@
-import yard from ".././assets/homepage/yard.JPG";
-import bed from ".././assets/homepage/bed.JPG";
-import ".././styles/Homepage.css";
+import yard from "../../assets/homepage/yard.JPG";
+import bed from "../../assets/homepage/bed.JPG";
+import "./Homepage.css";
 import { useState } from "react";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 
 const Homepage = () => {
@@ -69,6 +70,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
+            <ScrollToTop />
         </>
     )
 };

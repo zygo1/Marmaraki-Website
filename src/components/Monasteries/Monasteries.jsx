@@ -1,11 +1,12 @@
-import '.././styles/Monasteries.css';
-import holy_trinity from '.././assets/monasteries/agia-triada.jpg'
-import saint_nicholas from '.././assets/monasteries/agios-nikolaos.jpeg'
-import great_meteoron from '.././assets/monasteries/great-meteoron.jpg'
-import varlaam from '.././assets/monasteries/varlaam.jpg'
-import roussanou from '.././assets/monasteries/roussanou.jpg'
-import saint_stephen from '.././assets/monasteries/saint-stephen.jpg';
+import './Monasteries.css';
+import holy_trinity from '../../assets/monasteries/agia-triada.jpg'
+import saint_nicholas from '../../assets/monasteries/agios-nikolaos.jpeg'
+import great_meteoron from '../../assets/monasteries/great-meteoron.jpg'
+import varlaam from '../../assets/monasteries/varlaam.jpg'
+import roussanou from '../../assets/monasteries/roussanou.jpg'
+import saint_stephen from '../../assets/monasteries/saint-stephen.jpg';
 import { useState } from 'react';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 
 const Monastery = ({ monastery, index }) => {
@@ -24,9 +25,9 @@ const Monastery = ({ monastery, index }) => {
             <div className="title">{monastery.name}</div>
             <div className='button-location'>
                 <div></div>
-                <button onClick={toggleInfo}>{isExpanded ? "Hide information" : "See more information"}</button>
+                <button onClick={toggleInfo} className='info-button'>{isExpanded ? "Hide information" : "See more information"}</button>
                 <a href={monastery.link} target='_blank' className='location'>
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         location_on
                     </span>
                 </a>
@@ -80,13 +81,16 @@ const Monasteries = () => {
     ];
 
     return (
-        <section className="monasteries-wrapper">
-            {monasteriesArr.map((monastery, index) => {
-                return (
-                    <Monastery key={index} monastery={monastery} />
-                )
-            })}
-        </section>
+        <>
+            <section className="monasteries-wrapper">
+                {monasteriesArr.map((monastery, index) => {
+                    return (
+                        <Monastery key={index} monastery={monastery} />
+                    )
+                })}
+            </section>
+            <ScrollToTop />
+        </>
     );
 };
 

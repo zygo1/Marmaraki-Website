@@ -9,7 +9,7 @@
 }
 
 .landing .about{
-    width: 1000px;
+    width: 50%;
     background-color: #ff5b79;
     color: white;
     height: 600px;
@@ -27,7 +27,7 @@
 
 
 .landing img{
-    width: 1000px;
+    width: 50%;
     height: 600px;
     max-width: 100%;
 }
@@ -35,5 +35,12 @@
 @media (max-width:850px){
     .landing{
         flex-direction: column;
+    }
+    .landing .about{
+        width: 100%;
+    }
+
+    .landing img{
+        width: 100%;
     }
 }

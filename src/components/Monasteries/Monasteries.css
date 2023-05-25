@@ -15,7 +15,7 @@
   height: 600px; 
 }
 
-.container button{
+.container .info-button{
  border: none;
  border-radius: 4px;
  /* background-color: white;
@@ -38,7 +38,7 @@
 
 
 .container.monasteries.expanded:hover, .container.monasteries:hover{
-  background-color: rgb(202, 202, 202);
+  background-color: var(--hoverColor);
   transition: 0.3s ease;
 }
 .information{
