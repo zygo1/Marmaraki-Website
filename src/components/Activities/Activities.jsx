@@ -34,7 +34,7 @@ const Activities = () => {
                     return (
                         <div className="container">
                             <a href={activity.link} target="_blank" rel="noreferrer">
-                                <div className="image"><img src={activity.image} alt="Activity image" /></div>
+                                <div className="image"><img src={activity.image} alt={activity.name} /></div>
                             </a>
                             <div className="title">{activity.name}</div>
                             <div>{activity.info}</div>
