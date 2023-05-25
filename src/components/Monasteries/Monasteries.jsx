@@ -19,14 +19,14 @@ const Monastery = ({ monastery, index }) => {
 
     return (
         <div className={`container monasteries ${isExpanded ? 'expanded' : ''}`} key={index}>
-            <a href={monastery.link} target="_blank">
+            <a href={monastery.link} target="_blank" rel="noreferrer">
                 <div className="image"><img src={monastery.image} alt={monastery.name} /></div>
             </a>
             <div className="title">{monastery.name}</div>
             <div className='button-location'>
                 <div></div>
                 <button onClick={toggleInfo} className='info-button'>{isExpanded ? "Hide information" : "See more information"}</button>
-                <a href={monastery.link} target='_blank' className='location'>
+                <a href={monastery.link} target="_blank" rel="noreferrer" className='location'>
                     <span className="material-symbols-outlined">
                         location_on
                     </span>

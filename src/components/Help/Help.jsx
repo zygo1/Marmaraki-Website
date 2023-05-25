@@ -31,7 +31,7 @@ const Help = () => {
                                 </div>
                                 <div>
                                     <span className="material-symbols-outlined">directions_bus</span>
-                                    If you prefer to visit Meteora by bus, <a href='https://www.ktel-trikala.gr/?module=default&pages_id=45&lang=en' className='bus-schedule-link' target='_blank'>here</a> is the schedule you can refer to.
+                                    If you prefer to visit Meteora by bus, <a href='https://www.ktel-trikala.gr/?module=default&pages_id=45&lang=en' className='bus-schedule-link' target='_blank' rel="noreferrer">here</a> is the schedule you can refer to.
                                     While the bus conveniently visits all the monasteries, I would recommend considering alternative modes of transportation such as traveling by car or exploring on foot.
                                     These options can provide a more immersive and rewarding experience, allowing you to fully appreciate the breathtaking beauty of Meteora and its monasteries.
                                 </div>
@@ -65,22 +65,23 @@ const Help = () => {
                                 allowFullScreen=""
                                 className='iframe-saint-nicholas'
                                 loading="lazy"
+                                title="Embedded content Saint Nicholas"
                                 referrerPolicy="no-referrer-when-downgrade">
                             </iframe>
 
                             <div>You can find directions to the rest of the monasteries by following the links below:
                                 <ul >
-                                    <li className='inner-list'><a href="https://goo.gl/maps/aj9kL5Y6tU8ZY9eo6?coh=178572&entry=tt" target='_blank' className='monastery-links'>The Monastery of Great Meteoron</a> (Tip: Spectacular view)</li>
-                                    <li className='inner-list'><a href="https://goo.gl/maps/FWpMG7WbrpPytsKm9?coh=178572&entry=tt" target='_blank' className='monastery-links'>The Monastery of Saint Nicholas Anapausas</a> (Tip: Closest to Kastraki)</li>
-                                    <li className='inner-list'><a href="https://goo.gl/maps/1R8QJ9CkRaU64zbb9?coh=178572&entry=tt" target='_blank' className='monastery-links'>The Monastery of Roussanou</a></li>
-                                    <li className='inner-list'><a href="https://goo.gl/maps/aboQMsZzxGjPRPoe6?coh=178572&entry=tt" target='_blank' className='monastery-links'>The Monastery of Varlaam</a></li>
-                                    <li className='inner-list'><a href="https://goo.gl/maps/bQcf2bsKZxmVyu3K9?coh=178572&entry=tt" target='_blank' className='monastery-links'>The Monastery of Holy Trinity (Tip: Easy path)</a></li>
-                                    <li className='inner-list'><a href='https://goo.gl/maps/wAaFCmZSipUwpfog8?coh=178572&entry=tt' target='_blank' className='monastery-links'>The Monastery of Saint Stephan (Tip: Easy path)</a></li>
+                                    <li className='inner-list'><a href="https://goo.gl/maps/aj9kL5Y6tU8ZY9eo6?coh=178572&entry=tt" rel="noreferrer" target='_blank' className='monastery-links'>The Monastery of Great Meteoron</a> (Tip: Spectacular view)</li>
+                                    <li className='inner-list'><a href="https://goo.gl/maps/FWpMG7WbrpPytsKm9?coh=178572&entry=tt" rel="noreferrer" target='_blank' className='monastery-links'>The Monastery of Saint Nicholas Anapausas</a> (Tip: Closest to Kastraki)</li>
+                                    <li className='inner-list'><a href="https://goo.gl/maps/1R8QJ9CkRaU64zbb9?coh=178572&entry=tt" rel="noreferrer" target='_blank' className='monastery-links'>The Monastery of Roussanou</a></li>
+                                    <li className='inner-list'><a href="https://goo.gl/maps/aboQMsZzxGjPRPoe6?coh=178572&entry=tt" rel="noreferrer" target='_blank' className='monastery-links'>The Monastery of Varlaam</a></li>
+                                    <li className='inner-list'><a href="https://goo.gl/maps/bQcf2bsKZxmVyu3K9?coh=178572&entry=tt" rel="noreferrer" target='_blank' className='monastery-links'>The Monastery of Holy Trinity (Tip: Easy path)</a></li>
+                                    <li className='inner-list'><a href='https://goo.gl/maps/wAaFCmZSipUwpfog8?coh=178572&entry=tt' rel="noreferrer" target='_blank' className='monastery-links'>The Monastery of Saint Stephan (Tip: Easy path)</a></li>
                                 </ul>
                             </div>
                         </div>)}
                         <li onClick={() => handleListClick(2)} className='outter-list'><span>Which is the bus schedule?</span><span className="material-symbols-outlined add">add</span></li>
-                        {activeIndex === 2 && (<div className='dropdowns'><div><span className="material-symbols-outlined">directions_bus</span><span>You could find information about the local bus schedule </span><a href='https://www.ktel-trikala.gr/?module=default&pages_id=45&lang=en' className='bus-schedule-link' target='_blank'>here</a>.</div></div>)}
+                        {activeIndex === 2 && (<div className='dropdowns'><div><span className="material-symbols-outlined">directions_bus</span><span>You could find information about the local bus schedule </span><a href='https://www.ktel-trikala.gr/?module=default&pages_id=45&lang=en' rel="noreferrer" className='bus-schedule-link' target='_blank'>here</a>.</div></div>)}
                         <li onClick={() => handleListClick(3)} className='outter-list'><span>Which is the WiFi name and password?</span><span className="material-symbols-outlined add">add</span></li>
                         {activeIndex === 3 && (<div className='dropdowns'><div><span className="material-symbols-outlined">wifi</span><span>WiFi name: Marmaraki / WiFi password: Marmaraki1515</span></div><span></span></div>)}
                         <li onClick={() => handleListClick(4)} className='outter-list'><span>What time is the check-out?</span><span className="material-symbols-outlined add">add</span></li>
@@ -91,8 +92,8 @@ const Help = () => {
                 <div className="contact">
                     <h3>Need assistance? Feel free to contact me for any help or inquiries!</h3>
                     <ul className='bullet-list'>
-                        <li>Phone: <a href={`tel:${'0030' + 6943120920}`}>{'0030' + 6943120920}</a></li>
-                        <li>E-mail: <a href="mailto:example@example.com">marmaraki.apartment@gmail.com</a></li>
+                        <li>Phone: <a href={`tel:${'0030' + 6943120920}`} rel="noreferrer">{'0030' + 6943120920}</a></li>
+                        <li>E-mail: <a href="mailto:example@example.com" rel="noreferrer">marmaraki.apartment@gmail.com</a></li>
                     </ul>
                 </div>
                 <ScrollToTop />

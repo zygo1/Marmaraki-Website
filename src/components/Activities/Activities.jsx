@@ -1,4 +1,3 @@
-/* <iframe src="https://www.google.com/maps/d/embed?mid=1bC3gy1XPLJAvGhD0x4wTUeroHT4xP2zA&ehbc=2E312F" width="640" height="480"></iframe> */
 import meteora_trails from "../../assets/meteora_trails.jpg";
 import meteora_fly from "../../assets/meteoraflyadventures.jpg";
 import meteora_ebike from "../../assets/meteora_ebike.jpg";
@@ -34,8 +33,8 @@ const Activities = () => {
                 {activitiesArray.map((activity) => {
                     return (
                         <div className="container">
-                            <a href={activity.link} target="_blank">
-                                <div className="image"><img src={activity.image} /></div>
+                            <a href={activity.link} target="_blank" rel="noreferrer">
+                                <div className="image"><img src={activity.image} alt="Activity image" /></div>
                             </a>
                             <div className="title">{activity.name}</div>
                             <div>{activity.info}</div>
