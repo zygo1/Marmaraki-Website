@@ -4,12 +4,12 @@ import meteora_ebike from "../../assets/meteora_ebike.jpg";
 import museum_greek_education from "../../assets/culture/greek-education.jpg";
 import natural_history from "../../assets/culture/natural-history-meteora.jpg";
 import geological from "../../assets/culture/geological_formations.jpg";
+import Divider from "../Divider/Divider";
 import "./Activities.css";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 
 const Container = (props) => {
-
     return (
         <>
             <div className="container activities" key={props.key}>
@@ -68,7 +68,7 @@ const Activities = () => {
 
     return (
         <>
-            <div className="section-divider"> <span className="section-label">Activities</span></div>
+            <Divider name="Activities" />
             <section className="activities">
                 {activitiesArray.map((activity, index) => {
                     return (
@@ -82,7 +82,7 @@ const Activities = () => {
                     )
                 })}
             </section>
-            <div className="section-divider"><span className="section-label">Culture</span></div>
+            <Divider name="Culture" />
             <section className="activities">
                 {cultureArray.map((museum, index) => {
                     return (
@@ -101,4 +101,4 @@ const Activities = () => {
     )
 };
 
-export default Activities;
+export { Activities, Container };

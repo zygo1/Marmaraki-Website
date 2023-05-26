@@ -2,14 +2,13 @@
     cursor: pointer;
     border: none;
     border-radius: 100%;
-    padding: 14px;
+    padding: 22px;
     position: fixed;
     bottom: 20px;
     left: 20px;
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
 }
-
 
 .scroll-to-top:hover{
     background-color:var(--primaryHover);
@@ -19,7 +18,7 @@
 .material-symbols-outlined.arrow{
     position: fixed;
     cursor: pointer;
-    left: 22px;
-    bottom: 22px;
+    left: 30px;
+    bottom: 30px;
     color: white;
 }

@@ -7,6 +7,7 @@ import roussanou from '../../assets/monasteries/roussanou.jpg'
 import saint_stephen from '../../assets/monasteries/saint-stephen.jpg';
 import { useState } from 'react';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import Divider from '../Divider/Divider';
 
 
 const Monastery = ({ monastery, index }) => {
@@ -96,6 +97,7 @@ const Monasteries = () => {
 
     return (
         <>
+            <Divider name="Monasteries" />
             <section className="monasteries-wrapper">
                 {monasteriesArr.map((monastery, index) => {
                     return (

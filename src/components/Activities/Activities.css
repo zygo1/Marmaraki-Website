@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 0px 10px 50px 10px;
+    margin: 0px 10px 10px 10px;
 }
 
 .container{
@@ -49,29 +49,6 @@
 .info-container{
     font-size: min(0.875rem,14px);
 }
-
-.section-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Sriracha', cursive;
-  }
-  
-  .section-divider::before,
-  .section-divider::after {
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    background-color: #000;
-  }
-  
-  .section-label {
-    margin: 0 10px;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: #424242;
-  }
-
 
 @media (max-width:850px){
     .activities{

@@ -1,0 +1,22 @@
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sriracha', cursive;
+    margin: 20px 0px;
+  }
+  
+  .section-divider::before,
+  .section-divider::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+  }
+  
+  .section-label {
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #424242;
+  }

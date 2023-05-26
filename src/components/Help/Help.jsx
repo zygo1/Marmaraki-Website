@@ -92,7 +92,7 @@ const Help = () => {
                 <div className="contact">
                     <h3>Need assistance? Feel free to contact me for any help or inquiries!</h3>
                     <ul className='bullet-list'>
-                        <li>Phone: <a href={`tel:${'0030' + 6943120920}`} rel="noreferrer">{'0030' + 6943120920}</a></li>
+                        <li>Phone: <a href={`tel:${'0030' + 6943120920}`} rel="noreferrer">{'0030' + 6943120920}</a> or <a href={`tel:${'0030' + 6974472539}`} rel="noreferrer">{'0030' + 6974472539}</a></li>
                         <li>E-mail: <a href="mailto:example@example.com" rel="noreferrer">marmaraki.apartment@gmail.com</a></li>
                     </ul>
                 </div>

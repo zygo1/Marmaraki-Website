@@ -38,6 +38,8 @@ const Navigation = () => {
         const mediaQuery = window.matchMedia('(max-width: 850px)');
 
         const handleMediaQueryChange = () => {
+            const header = navRef.current; // header navbar
+            header.style.transform = "translateY(0px)";
             setIsActive(false);
         };
 
@@ -102,13 +104,13 @@ const Navigation = () => {
                     <Link to='/monasteries'>Monasteries</Link>
                 </li>
                 <li>
-                    <Link to='/activities'>Activities</Link>
+                    <Link to='/activities'>Explore</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to='/restaurants'>Restaurants</Link>
-                </li>
+                </li> */}
                 <li>
-                    <Link to='/help'>Help</Link>
+                    <Link to='/help'>Contact</Link>
                 </li>
             </ul>
         </nav>

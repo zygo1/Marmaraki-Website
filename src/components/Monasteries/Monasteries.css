@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   gap: 120px;
   justify-content: space-around;
-  margin: 60px 10px 0px 10px;
+  margin: 30px 10px 0px 10px;
 }
 
 .container.monasteries {
@@ -21,8 +21,7 @@
   background-color: rgb(228, 228, 228);
   box-shadow: 5px 10px 15px rgb(143, 143, 143);
   position: relative;
-  
-  transition: height 0.3s ease;
+  transition: height 0.5s ease;
 }
 
 .container.monasteries.expanded {
