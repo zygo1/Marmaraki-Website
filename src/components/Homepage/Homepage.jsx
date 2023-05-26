@@ -99,6 +99,7 @@ const Homepage = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12275.874804379057!2d21.6174356!3d39.7178861!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13590f2f9d52a9b1%3A0x53274e5af844a553!2sMarmaraki%20House!5e0!3m2!1sel!2sgr!4v1685107346879!5m2!1sel!2sgr"
                         width="600"
                         height="450"
+                        title="google-maps-house-location"
                         allowFullScreen=""
                         loading="lazy"
                         className="directions-map"
