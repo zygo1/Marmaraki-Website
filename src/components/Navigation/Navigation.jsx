@@ -96,7 +96,7 @@ const Navigation = () => {
         <nav className='navigationBar' ref={navRef} >
             <div className='image-brandname'>
                 <img src={meteora_black} alt='Meteora' />
-                <Link to='/'>Marmaraki</Link>
+                <Link to='/' className='brand-name'>Marmaraki</Link>
             </div>
             <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
             <ul className={`navLinks ${isActive ? 'active' : ''}`} >

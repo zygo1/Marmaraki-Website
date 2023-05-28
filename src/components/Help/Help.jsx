@@ -49,9 +49,7 @@ const Help = () => {
                                     viewpoints and monasteries scattered across the landscape. Along the way, you can stop at designated parking areas and embark on short walks to fully appreciate the natural beauty that surrounds you.
                                 </div>
                                 <div>
-                                    <span classname="material-symbols-outlined">
-                                        tips_and_updates
-                                    </span>
+                                    <span class="material-symbols-outlined">tips_and_updates</span>
                                     Tip for visiting Meteora:
                                     When planning your visit to the monasteries, keep in mind that wearing long skirts or long dresses for women and long pants for men is required as a sign of respect for the religious and cultural traditions of the region.
                                 </div>
