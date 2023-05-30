@@ -93,7 +93,7 @@ const Navigation = () => {
     }, []);
 
     return (
-        <>
+        <header>
             <nav className='navigationBar' ref={navRef} >
                 <div className='image-brandname'>
                     <img src={meteora_black} alt='Meteora' />
@@ -116,7 +116,7 @@ const Navigation = () => {
                 </ul>
             </nav>
             <div className={`blur-background ${isActive ? "active" : ""}`}></div>
-        </>
+        </header>
     );
 };
 

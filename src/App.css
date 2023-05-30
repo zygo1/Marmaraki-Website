@@ -9,3 +9,11 @@
   --hoverColor:#cacaca;
   --primaryHover:#ff365a;
 }
+
+/* prevent the user from scrolling horizontally to see the hidden navigation bar  */
+@media (max-width: 850px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
