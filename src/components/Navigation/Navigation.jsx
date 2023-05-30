@@ -93,27 +93,30 @@ const Navigation = () => {
     }, []);
 
     return (
-        <nav className='navigationBar' ref={navRef} >
-            <div className='image-brandname'>
-                <img src={meteora_black} alt='Meteora' />
-                <Link to='/' className='brand-name'>Marmaraki</Link>
-            </div>
-            <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
-            <ul className={`navLinks ${isActive ? 'active' : ''}`} >
-                <li>
-                    <Link to='/monasteries'>Monasteries</Link>
-                </li>
-                <li>
-                    <Link to='/activities'>Explore</Link>
-                </li>
-                {/* <li>
+        <>
+            <nav className='navigationBar' ref={navRef} >
+                <div className='image-brandname'>
+                    <img src={meteora_black} alt='Meteora' />
+                    <Link to='/' className='brand-name'>Marmaraki</Link>
+                </div>
+                <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
+                <ul className={`navLinks ${isActive ? 'active' : ''}`} >
+                    <li>
+                        <Link to='/monasteries'>Monasteries</Link>
+                    </li>
+                    <li>
+                        <Link to='/activities'>Explore</Link>
+                    </li>
+                    {/* <li>
                     <Link to='/restaurants'>Restaurants</Link>
                 </li> */}
-                <li>
-                    <Link to='/help'>Contact</Link>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                        <Link to='/help'>Contact</Link>
+                    </li>
+                </ul>
+            </nav>
+            <div className={`blur-background ${isActive ? "active" : ""}`}></div>
+        </>
     );
 };
 

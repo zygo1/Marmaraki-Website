@@ -22,7 +22,7 @@ const AirbnbEmbed = () => {
     }, []);
 
     return (
-        <div class="airbnb-embed-frame" data-id="27454571" data-view="home" >
+        <div className="airbnb-embed-frame" data-id="27454571" data-view="home" >
             <a href="https://www.airbnb.com/rooms/27454571?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">View On Airbnb</a>
             <a href="https://www.airbnb.com/rooms/27454571?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Home in Kastraki, Trikala · ★4.90 · 2 bedrooms · 3 beds · 1 bath</a>
         </div>
