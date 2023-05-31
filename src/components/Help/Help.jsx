@@ -5,7 +5,6 @@ import ScrollToTop from '../ScrollToTop/ScrollToTop';
 const Help = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
-
     // The initial state of activeIndex is null, so the first time will be false and it will be assigned the current index (e.g. 2).
     // If the activeIndex === index it will be assigned null and the dropdown will close.
     const handleListClick = (index) => {

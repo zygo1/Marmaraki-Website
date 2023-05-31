@@ -61,7 +61,7 @@ const Navigation = () => {
         const handleScroll = () => {
             // init the currentScrollPos 
             const currentScrollPos = window.scrollY;
-            const header = navRef.current; // hook the header
+            const header = navRef.current;
 
             if (!header) {
                 return;
@@ -71,7 +71,7 @@ const Navigation = () => {
             const mediaQuery = window.matchMedia('(max-width: 850px)');
 
             if (mediaQuery.matches) {
-                return; // skip the transformations if media query is applied
+                return; // just skip the transformations if media query is applied
             };
 
             // check if the user scrolls down or up

@@ -5,6 +5,7 @@ import "./ScrollToTop.css";
 const ScrollToTop = () => {
     const [visible, setVisible] = useState(false);
 
+    // handle scroll in orde to show the button when the user scrolls for over 100
     const handleScroll = () => {
         if (window.pageYOffset > 100) {
             setVisible(true);

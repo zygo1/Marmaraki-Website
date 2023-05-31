@@ -1,6 +1,5 @@
 import "./Divider.css"
 
-
 const Divider = (props) => {
 
     return (
