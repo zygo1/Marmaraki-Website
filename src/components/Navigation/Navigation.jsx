@@ -77,8 +77,10 @@ const Navigation = () => {
             // check if the user scrolls down or up
             if (prevScrollPos > currentScrollPos) {
                 header.style.transform = "translateY(0px)";
+                // console.log(`prevScrollPos: ${prevScrollPos}, currentScrollPos: ${currentScrollPos}`)
             } else if (prevScrollPos <= currentScrollPos) {
                 header.style.transform = "translateY(-200px)";
+
             };
 
             // update the prevScrollPos
@@ -93,30 +95,32 @@ const Navigation = () => {
     }, []);
 
     return (
-        <header>
-            <nav className='navigationBar' ref={navRef} >
-                <div className='image-brandname'>
-                    <img src={meteora_black} alt='Meteora' />
-                    <Link to='/' className='brand-name'>Marmaraki</Link>
-                </div>
-                <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
-                <ul className={`navLinks ${isActive ? 'active' : ''}`} >
-                    <li>
-                        <Link to='/monasteries'>Monasteries</Link>
-                    </li>
-                    <li>
-                        <Link to='/activities'>Explore</Link>
-                    </li>
-                    {/* <li>
+        <>
+            <header className='header-section' ref={navRef}>
+                <nav className='navigationBar'  >
+                    <div className='image-brandname'>
+                        <img src={meteora_black} alt='Meteora' />
+                        <Link to='/' className='brand-name'>Marmaraki</Link>
+                    </div>
+                    <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
+                    <ul className={`navLinks ${isActive ? 'active' : ''}`} >
+                        <li>
+                            <Link to='/monasteries'>Monasteries</Link>
+                        </li>
+                        <li>
+                            <Link to='/activities'>Explore</Link>
+                        </li>
+                        {/* <li>
                     <Link to='/restaurants'>Restaurants</Link>
                 </li> */}
-                    <li>
-                        <Link to='/help'>Contact</Link>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <Link to='/help'>Contact</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
             <div className={`blur-background ${isActive ? "active" : ""}`}></div>
-        </header>
+        </>
     );
 };
 
