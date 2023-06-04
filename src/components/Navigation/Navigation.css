@@ -15,10 +15,6 @@
     font-family: 'Sriracha', cursive;
     font-size: 1.4rem;
     background-color: rgba(255, 255, 255, 0.50);
-    /* position: sticky;
-    top: 0;
-    z-index: 3;
-    transition: 0.5s ease ; */
 }
 
 .image-brandname{
@@ -35,7 +31,7 @@
 }  
 
 .material-symbols-outlined.menu{
-       display: none;
+    display: none;
 }
 
 /* --------------------- Responsive navbar ------------------------- */
@@ -56,28 +52,38 @@
 
 @media  (max-width:850px){
     .navLinks {
-    display: flex;
-    padding: 10px;
-    text-align: right;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0px;
-    height: 100vh;
-    width: 180px;
-    background-color: #FF385C;
-    color: white;
-    text-align: center;
-    z-index:2;
+        display: flex;
+        padding: 10px;
+        text-align: right;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 100vh;
+        width: 180px;
+        background-color: #FF385C;
+        color: white;
+        text-align: center;
+        z-index:2;
     }
-    
+
     .navLinks.active {
-    text-align: center;
+        text-align: center;
     }
     /* --------------------- Responsive navbar ------------------------- */
-    
+
     .navigationBar{
         padding: 0px;
+    }
+    .header-section{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+    }
+
+    .header-container-nav{
+        margin-bottom: 60px;
     }
 
     .image-brandname a {
@@ -96,24 +102,24 @@
 
     /* Blur background */
     .blur-background{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        z-index: 1;
-        backdrop-filter: blur(0);
-        transition: backdrop-filter 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    backdrop-filter: blur(0);
+    transition: backdrop-filter 0.5s ease;
     }
-    
+
     .blur-background.active{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
     }
 
 }

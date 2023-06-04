@@ -80,14 +80,14 @@ const Homepage = () => {
                     <div className="image" style={imageContainerStyle}>
                         <img
                             style={imageStyle}
-                            src={towels}
+                            src={yard}
                             onMouseEnter={handleMouseHover}
                             onMouseLeave={handleMouseLeave}
                             alt="The bedroom"
                         />
                         <img
                             style={hoverImageStyle}
-                            src={yard}
+                            src={towels}
                             onMouseEnter={handleMouseHover}
                             onMouseLeave={handleMouseLeave}
                             alt="The yard of the house"
