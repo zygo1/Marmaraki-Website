@@ -95,7 +95,7 @@ const Navigation = () => {
     }, []);
 
     return (
-        <header className='header-container-nav'>
+        <>
             <div className='header-section' ref={navRef}>
                 <nav className='navigationBar'  >
                     <div className='image-brandname'>
@@ -120,7 +120,7 @@ const Navigation = () => {
                 </nav>
             </div>
             <div className={`blur-background ${isActive ? "active" : ""}`}></div>
-        </header>
+        </>
     );
 };
 

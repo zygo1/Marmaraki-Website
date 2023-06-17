@@ -76,6 +76,7 @@
         flex-direction: column;
         gap: 20px;
         font-size: 0.8750rem;
+        margin-top: 60px;
     }
     .faq{
         width: calc(90%);
