@@ -1,5 +1,5 @@
 import './Navigation.css';
-import meteora_black from '../../assets/meteora-black.png';
+import meteora_black from '../../assets/marmaraki.svg';
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
@@ -99,8 +99,8 @@ const Navigation = () => {
             <div className='header-section' ref={navRef}>
                 <nav className='navigationBar'  >
                     <div className='image-brandname'>
-                        <img src={meteora_black} alt='Meteora' />
-                        <Link to='/' className='brand-name'>Marmaraki</Link>
+                        <Link to='/'><img src={meteora_black} alt='Meteora' className='logo-marmaraki' /></Link>
+
                     </div>
                     <span ref={linkRef} onClick={handleToggle} className="material-symbols-outlined menu visible">Menu</span>
                     <ul className={`navLinks ${isActive ? 'active' : ''}`} >

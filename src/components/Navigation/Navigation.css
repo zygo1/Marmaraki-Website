@@ -11,19 +11,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 24px;
-    color: #FF385C;
+    color: rgb(59, 59, 59);
     font-family: 'Sriracha', cursive;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     background-color: rgba(255, 255, 255, 0.50);
 }
 
-.image-brandname{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    font-size: 2rem;
-    margin-right: 12px;
+.logo-marmaraki{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }
 
 .navigationBar ul li{
@@ -82,13 +79,9 @@
         z-index: 3;
     }
 
-
-    .image-brandname a {
-        font-size: 1.5rem;
-    }
-
-    .image-brandname img{
-        width: 150px;
+    .logo-marmaraki{
+        height: 70%;
+        width: 70%;
     }
 
     .material-symbols-outlined.menu{
@@ -98,7 +91,7 @@
     }
 
     /* Blur background */
-    .blur-background{
+    /* .blur-background{
         position: fixed;
         top: 0;
         left: 0;
@@ -117,7 +110,7 @@
         height: 100%;
         z-index: 1;
         backdrop-filter: blur(5px);
-    }
+    } */
 
 }
 
