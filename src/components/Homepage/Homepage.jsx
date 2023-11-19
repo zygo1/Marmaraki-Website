@@ -1,6 +1,5 @@
 import yard from "../../assets/homepage/yard.JPG";
 import "./Homepage.css";
-// import bed from "../../assets/homepage/bed.JPG";
 import towels from "../../assets/homepage/towels.JPG";
 import Divider from "../Divider/Divider";
 import React from 'react';
